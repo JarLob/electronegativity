@@ -105,6 +105,8 @@ export function writeIssues(root, isRelative, filename, result, isSarif){
           text: issue.description
         }
       };
+      
+      console.log(`issue is ${JSON.stringify(issue, null, 2)}`);
 
       result.locations = [
         {
